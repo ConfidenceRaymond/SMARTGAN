@@ -1,0 +1,105 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-sbu99cmu because the default path (/home/u/uanazodo/uanazodo/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Test dataset size: 15 subjects
+REMI_10p_003
+Orig_sd: max_px 12542.802734375 min_px -294.7412109375
+normalized_pixel_value: 8396.9189453125 0.0
+Res_: 8396.9189453125 0.0
+REMI_10p_005
+Orig_sd: max_px 3959.054931640625 min_px -246.9971923828125
+normalized_pixel_value: 3597.251220703125 0.0
+Res_: 3597.251220703125 0.0
+REMI_10p_015
+Orig_sd: max_px 15820.67578125 min_px -112.5068359375
+normalized_pixel_value: 10191.53125 0.0
+Res_: 10191.53125 0.0
+REMI_10p_016
+Orig_sd: max_px 7718.7724609375 min_px -159.7119140625
+normalized_pixel_value: 6076.79052734375 0.0
+Res_: 6076.79052734375 0.0
+REMI_10p_019
+Orig_sd: max_px 15641.7890625 min_px -215.03173828125
+normalized_pixel_value: 10486.935546875 0.0
+Res_: 10486.935546875 0.0
+REMI_10p_020
+Orig_sd: max_px 8810.9794921875 min_px -168.83251953125
+normalized_pixel_value: 7746.255859375 0.0
+Res_: 7746.255859375 0.0
+REMI_10p_023
+Orig_sd: max_px 9767.287109375 min_px -156.021484375
+normalized_pixel_value: 7753.72900390625 0.0
+Res_: 7753.72900390625 0.0
+REMIND_10p_003
+Orig_sd: max_px 3423.639892578125 min_px -89.7379150390625
+normalized_pixel_value: 3231.672119140625 0.0
+Res_: 3231.672119140625 0.0
+REMIND_10p_009
+Orig_sd: max_px 3574.126220703125 min_px -58.033447265625
+normalized_pixel_value: 3187.366455078125 0.0
+Res_: 3187.366455078125 0.0
+REMIND_10p_012
+Orig_sd: max_px 10876.5625 min_px -274.17822265625
+normalized_pixel_value: 9863.5966796875 0.0
+Res_: 9863.5966796875 0.0
+REMIND_10p_013
+Orig_sd: max_px 6765.22705078125 min_px -60.684814453125
+normalized_pixel_value: 6171.56689453125 0.0
+Res_: 6171.56689453125 0.0
+REMIND_10p_014
+Orig_sd: max_px 8123.3271484375 min_px -87.115966796875
+normalized_pixel_value: 6815.51513671875 0.0
+Res_: 6815.51513671875 0.0
+REMIND_10p_016
+Orig_sd: max_px 7681.375 min_px -214.082275390625
+normalized_pixel_value: 6392.0908203125 0.0
+Res_: 6392.0908203125 0.0
+REMIND_10p_018
+Orig_sd: max_px 2650.35107421875 min_px -100.511962890625
+normalized_pixel_value: 2364.20751953125 0.0
+Res_: 2364.20751953125 0.0
+REMIND_10p_020
+Orig_sd: max_px 3530.63525390625 min_px -71.71044921875
+normalized_pixel_value: 3179.703857421875 0.0
+Res_: 3179.703857421875 0.0
+--- 84.41168808937073 seconds ---
+
+scontrol show job 463350
+JobId=463350 JobName=model_mse.sh
+   UserId=uanazodo(3102941) GroupId=uanazodo(6055667) MCS_label=N/A
+   Priority=145964 Nice=0 Account=def-uanazodo QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:02:22 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2024-02-05T13:31:07 EligibleTime=2024-02-05T13:31:07
+   AccrueTime=2024-02-05T13:31:07
+   StartTime=2024-02-05T18:36:27 EndTime=2024-02-05T18:38:49 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-02-05T18:36:27 Scheduler=Main
+   Partition=compute_full_node AllocNode:Sid=mist-login01:731702
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=mist052
+   BatchHost=mist052
+   NumNodes=1 NumCPUs=128 NumTasks=4 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=235200M,node=1,billing=4,gres/gpu=4
+   AllocTRES=cpu=128,mem=235200M,node=1,billing=4,gres/gpu=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=235200M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/u/uanazodo/uanazodo/Ray/Predictions/model_mse.sh
+   WorkDir=/gpfs/fs0/scratch/u/uanazodo/uanazodo/Ray/Predictions
+   Comment=/opt/slurm/bin/sbatch --export=NONE model_mse.sh 
+   StdErr=/gpfs/fs0/scratch/u/uanazodo/uanazodo/Ray/Predictions/slurm-463350.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/u/uanazodo/uanazodo/Ray/Predictions/slurm-463350.out
+   Power=
+   CpusPerTres=gpu:32
+   TresPerNode=gres:gpu:4
+   
+
+sacct -j 463350
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+463350       model_mse+ def-uanaz+   00:02:22                        00:03.823  00:32.404      0:0 
+463350.batch      batch def-uanaz+   00:02:22  34663104K   3553472K  00:03.823  00:32.404      0:0 
+463350.exte+     extern def-uanaz+   00:02:22     97600K      7296K   00:00:00   00:00:00      0:0 
